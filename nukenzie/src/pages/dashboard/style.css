@@ -1,0 +1,106 @@
+.dashboard main {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.insert {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 35%;
+  height: max-content;
+}
+
+.insert form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  border: 1px solid var(--grey-2);
+  border-radius: var(--radius-2);
+  max-width: 100%;
+}
+
+.insert form small {
+  padding: 0 0.5rem;
+  text-align: left;
+  position: relative;
+  bottom: 0.5rem;
+  color: var(--grey-3);
+}
+
+.insert form div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.insert form div label {
+  width: 40%;
+}
+
+.insert form div input::placeholder {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  gap: 2rem;
+  width: 60%;
+}
+
+.summary div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.card_list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.no_insert {
+  background-color: var(--grey-1);
+  padding: 1.5rem;
+  border-radius: var(--radius-2);
+}
+
+@media (max-width: 768px){
+  .dashboard main {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  .insert {
+    width: 80%;
+  }
+  .summary{
+    width: 80%;
+  }
+  .summary div{
+   flex-direction: column;
+  }
+  .nav_buttons{
+    overflow: auto;
+    width: 100%;
+  }
+  .nav_buttons::-webkit-scrollbar{
+   appearance: none;
+  }
+}

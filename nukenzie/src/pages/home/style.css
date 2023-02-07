@@ -1,0 +1,60 @@
+.home {
+  background-color: var(--grey-4);
+  height: 100vh;
+}
+
+.home main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.home main .about {
+  width: 40%;
+  height: 37.0625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--grey-1);
+}
+
+.home main .about img {
+  width: 7.625rem;
+  height: 1.25rem;
+}
+
+.home main .about h1 {
+  text-align: left;
+  max-width: 21.875rem;
+}
+
+.home main .about button {
+  width: 100%;
+  max-width: 15.0625rem;
+}
+
+.home main .img_home {
+  width: 60%;
+  height: 37.0625rem;
+}
+
+.home main .img_home img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .home main .about {
+    align-items: center;
+    width: 80%;
+  }
+  .home main .img_home {
+    opacity: 0.1;
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+  }
+}
+
